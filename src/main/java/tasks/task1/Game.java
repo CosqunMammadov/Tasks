@@ -30,5 +30,6 @@ public class Game {
                 break;
             }
         }
+        System.out.println("===========");
     }
 }
