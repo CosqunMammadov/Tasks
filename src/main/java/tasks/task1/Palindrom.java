@@ -9,12 +9,12 @@ public class Palindrom {
 
         Scanner sc=new Scanner(System.in);
         String str=sc.next();
-        char[] Acharmas = str.toCharArray();
+        char[] strCharArray = str.toCharArray();
         String reversedString = "";
 
 
-        for (int i = Acharmas.length - 1; i >= 0; i--) {
-           reversedString= reversedString + Acharmas[i];
+        for (int i = strCharArray.length - 1; i >= 0; i--) {
+           reversedString= reversedString + strCharArray[i];
         }
 
         System.out.println(str.equals(reversedString) ? "Yes" : "No");
