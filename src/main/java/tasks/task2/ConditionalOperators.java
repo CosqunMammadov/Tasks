@@ -86,6 +86,7 @@ public class ConditionalOperators {
 //        }
 //
 //
+//        textMark= numericalMark>=0&&numericalMark<=4 ? "Suspenso": numericalMark==5?"Aprobado":numericalMark==6?"Bien":numericalMark>6&&numericalMark<9?"Notable":"Sobresaliente";
 //        System.out.println(textMark);
     }
 }
