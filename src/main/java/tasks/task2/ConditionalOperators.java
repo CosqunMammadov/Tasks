@@ -34,43 +34,31 @@ public class ConditionalOperators {
 
 
 
-//        int numericalMark= scan.nextInt();
-//        String textMark="";
-////        switch (numericalMark){
-////            case 0:
-////                textMark="Suspenso";
-////                break;
-////            case 1:
-////                textMark="Suspenso";
-////                break;
-////            case 2:
-////                textMark="Suspenso";
-////                break;
-////            case 3:
-////                textMark="Suspenso";
-////                break;
-////            case 4:
-////                textMark="Suspenso";
-////                break;
-////            case 5:
-////                textMark="Aprobado";
-////                break;
-////            case 6:
-////                textMark="Bien";
-////                break;
-////            case 7:
-////                textMark="Notable";
-////                break;
-////            case 8:
-////                textMark="Notable";
-////                break;
-////            case 9:
-////                textMark="Sobresaliente";
-////                break;
-////            case 10:
-////                textMark="Sobresaliente";
-////                break;
-////        }
+        int numericalMark= scan.nextInt();
+        String textMark="";
+        switch (numericalMark){
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                textMark="Suspenso";
+                break;
+            case 5:
+                textMark="Aprobado";
+                break;
+            case 6:
+                textMark="Bien";
+                break;
+            case 7:
+            case 8:
+                textMark="Notable";
+                break;
+            case 9:
+            case 10:
+                textMark="Sobresaliente";
+                break;
+        }
 //
 //
 //        if (numericalMark>=0 && numericalMark<=4) {
