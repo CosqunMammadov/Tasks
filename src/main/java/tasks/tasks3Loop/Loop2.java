@@ -1,4 +1,4 @@
-package tasks.task3;
+package tasks.tasks3Loop;
 
 import java.util.Scanner;
 

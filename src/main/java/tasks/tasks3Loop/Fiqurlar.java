@@ -1,4 +1,4 @@
-package tasks.task3;
+package tasks.tasks3Loop;
 
 public class Fiqurlar {
     public void kvadratN2(int row, int column){    //ici bos kvadrat

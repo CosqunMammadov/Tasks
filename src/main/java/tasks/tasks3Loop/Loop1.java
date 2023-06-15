@@ -1,4 +1,4 @@
-package tasks.task3;
+package tasks.tasks3Loop;
 
 import java.util.Scanner;
 
@@ -14,7 +14,11 @@ public class Loop1 {
 
 //        reversedDigit(scan.nextInt());
 
-        armstrongNumbers();
+//        armstrongNumbers();
+
+        armstrongNumbers1();
+
+//        interestingNumbers();
     }
 
 
@@ -68,7 +72,7 @@ public class Loop1 {
             int b;
 
             if (i*10>=1000){
-                b=((i%10)*(i%10)*(i%10)) + ((i/10%10)*(i/10%10)*(i/10%10)) + (i/100)*(i/100)*(i/100); //Təklik, onluq, yüzlük
+                b=((i%10)*(i%10)*(i%10)) + ((i/10%10)*(i/10%10)*(i/10%10)) + (i/100)*(i/100)*(i/100);   // Uyğun olaraq təklik, onluq, yüzlük.
             } else if (i*10>=100) {
                 b=((i%10)*(i%10)*(i%10)) + ((i/10%10)*(i/10%10)*(i/10%10));
             }else
@@ -79,6 +83,34 @@ public class Loop1 {
                 System.out.println(i);
         }
 
+    }
+
+    public static  void armstrongNumbers1(){
+        for (int i = 0; i < 500; i++) {
+            int b=0;
+            String str= Integer.toString(i);
+            for (int j = 0; j < str.length(); j++) {
+               int a=Integer.parseInt(String.valueOf(str.charAt(j)));
+               b= b + (int) Math.pow(a,3);
+            }
+            if (b==i)
+                System.out.println(i);
+        }
+    }
+
+
+    public static void interestingNumbers(){
+        for (int i = 1001; i < 10000; i++) {
+
+            int a=i/100;
+            int a1=a/10+a%10;
+
+            int b= i%100;
+            int b1= b/10+b%10;
+
+            if (a1==b1)
+                System.out.println(i);
+        }
     }
 }
 

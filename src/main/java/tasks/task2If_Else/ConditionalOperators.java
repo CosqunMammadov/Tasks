@@ -1,4 +1,4 @@
-package tasks.task2;
+package tasks.task2If_Else;
 
 import java.util.Scanner;
 
