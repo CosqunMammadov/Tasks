@@ -1,6 +1,5 @@
-package tasks.task1;
+package tasks.task1String;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 import static java.util.Arrays.sort;
