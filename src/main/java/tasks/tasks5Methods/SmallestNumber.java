@@ -9,6 +9,7 @@ public class SmallestNumber {
         System.out.println("Enter quantity of number");
         int quantityNumber=scan.nextInt();
         int[] userNumbers= new int[quantityNumber];
+        System.out.println("Enter your numbers");
         for (int i = 0; i < quantityNumber; i++) {
             userNumbers[i]=scan.nextInt();
         }
