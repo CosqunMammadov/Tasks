@@ -5,22 +5,22 @@ import java.util.Scanner;
 
 public class SmallestNumber {
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Enter quantity of number");
-        int quantityNumber=scan.nextInt();
-        int[] userNumbers= new int[quantityNumber];
-        System.out.println("Enter your numbers");
-        for (int i = 0; i < quantityNumber; i++) {
-            userNumbers[i]=scan.nextInt();
-        }
-        System.out.println(findSmallestNumber(userNumbers));
+        findSmallestNumber();
     }
 
 
 
-    public static int findSmallestNumber(int[] array){
+    public static void findSmallestNumber(){
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter quantity of number");
+        int quantityNumber=scan.nextInt();
 
+        int[] array= new int[quantityNumber];
+        System.out.println("Enter your numbers");
+        for (int i = 0; i < quantityNumber; i++) {
+            array[i]=scan.nextInt();
+        }
         Arrays.sort(array);
-        return array[0];
+        System.out.println(array[0]);
     }
 }
