@@ -7,10 +7,12 @@ public class MiddleCharacter {
     public static void main(String[] args) {
 
 
-//        findMiddleCharacter(userInput);
-//        countVowels(userInput);
-        printPentagonalNumbers();
+//       findMiddleCharacter();
+//        countVowels();
+//        printPentagonalNumbers();
 //        findSmallestNumber();
+//        System.out.println(checkNumbers());
+        System.out.println(factorial(5));
 
     }
 
@@ -47,7 +49,7 @@ public class MiddleCharacter {
         System.out.println(a1);
         System.out.println(a2);
         int count=2;
-        while (count<=50){
+        while (count<50){
             int c=a2;
             a2=(a2-a1)+3+a2;
             a1=c;
@@ -72,4 +74,32 @@ public class MiddleCharacter {
         System.out.println(array[0]);
     }
 
+
+    public static boolean checkNumbers() {
+        Scanner scan = new Scanner(System.in);
+        int userInput = scan.nextInt();
+        boolean test=true;
+
+        for (int i = 0; i < userInput; i++) {
+
+            if ((userInput%10)%2!=0){
+                test= false;
+                break;
+            }
+            userInput= userInput/10;
+
+            if (userInput<10)
+                break;
+        }
+        return test;
+    }
+
+
+    public static int factorial(int i){
+        if (i>0) {
+            return i * factorial(i - 1);
+        }else {
+            return 1;
+        }
+    }
 }
