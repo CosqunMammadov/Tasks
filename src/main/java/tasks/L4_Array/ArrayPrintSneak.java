@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayPrintSneak {
     public static void main(String[] args) {
-        int[][] arr = {{1, 3, 5},{2, 4, 6},{3, 5, 8},{9, 10, 11}};
+        int[][] arr = {{1, 3, 5},{2, 4, 6},{7, 5, 8}};
 
         int lenght = arr.length * arr[0].length;
         int firstIndex = 0;
