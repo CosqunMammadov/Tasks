@@ -19,7 +19,7 @@ public class ArrayPrintSneak {
             firstIndex = firstIndex + increase;
 
             int factor = (int) Math.signum(firstIndex % 2);    // 0 or 1
-            secondIndex = secondIndex + ( (-2 * factor + 1) /* -1 or +1 */ * (a - firstIndex + 1) /* 0 or 1 */ );
+            secondIndex = secondIndex + ((-2 * factor + 1) /* -1 or +1 */ * (a - firstIndex + 1) /* 0 or 1 */);
 
 
             System.out.print(arr[firstIndex][secondIndex] + ", ");
