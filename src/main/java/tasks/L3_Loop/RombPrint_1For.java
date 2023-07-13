@@ -2,7 +2,7 @@ package tasks.L3_Loop;
 
 public class RombPrint_1For {
     public static void main(String[] args) {
-        int userInput = 7;
+        int userInput = 8;
         int amountOfRows = userInput * 2 - 1;
         int amountOfColumn = userInput * 2 - 2;
         int a = userInput - 1;
@@ -17,10 +17,7 @@ public class RombPrint_1For {
                 row++;
                 column = -1;
                 continue;
-            }
-
-
-            if (row % 2 == 0 && column % 2 == 0 && column <= a && column >= b)
+            }else if (row % 2 == 0 && column % 2 == 0 && column <= a && column >= b)
                 System.out.print("*");
             else if (row % 2 != 0 && column % 2 != 0 && column <= a + 1 && column >= b - 1)
                 System.out.print("*");
@@ -33,7 +30,7 @@ public class RombPrint_1For {
                 if (row >= userInput + 1 && row % 2 == 0 ) {
                     a -= 2;
                     b += 2;
-                } else if (row <= userInput - 1 && row % 2 != 0 ) {
+                } else if (row < userInput - 1 && row % 2 != 0 ) {
                     a += 2;
                     b -= 2;
                 }
@@ -50,6 +47,13 @@ public class RombPrint_1For {
         //   * * * * *     4
         //  * * * * * *    5
         // * * * * * * *   6
+        // * * * * * * *   8
+        //  * * * * * *    9
+        //   * * * * *     10
+        //    * * * *      11
+        //     * * *       12
+        //      * *        13
+        //       *         14
         // 0123456789123
     }
 }

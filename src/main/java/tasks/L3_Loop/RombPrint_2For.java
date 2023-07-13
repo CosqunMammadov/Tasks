@@ -2,7 +2,7 @@ package tasks.L3_Loop;
 
 public class RombPrint_2For {
     public static void main(String[] args) {
-        int userInput = 7;
+        int userInput = 8;
         int amountOfRows = userInput * 2 - 1;
         int amountOfColumn = userInput * 2 - 2;
         int a = userInput - 1;
@@ -13,6 +13,7 @@ public class RombPrint_2For {
             for (int column = 0; column <= amountOfColumn; column++) {
                 if (row == userInput)
                     break;
+
                 if (row % 2 == 0 && column % 2 == 0 && column <= a && column >= b)
                     System.out.print("*");
                 else if (row % 2 != 0 && column % 2 != 0 && column <= a + 1 && column >= b - 1)
