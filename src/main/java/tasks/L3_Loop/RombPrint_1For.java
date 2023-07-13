@@ -2,7 +2,7 @@ package tasks.L3_Loop;
 
 public class RombPrint_1For {
     public static void main(String[] args) {
-        int userInput = 8;
+        int userInput = 7;
         int amountOfRows = userInput * 2 - 1;
         int amountOfColumn = userInput * 2 - 2;
         int a = userInput - 1;
