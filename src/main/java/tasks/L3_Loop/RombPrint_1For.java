@@ -6,9 +6,7 @@ public class RombPrint_1For {
         int amountOfRows = userInput * 2 - 1;
         int amountOfColumn = userInput * 2 - 2;
         int a = userInput - 1;
-        int b = userInput -1;
-
-
+        int b = userInput - 1;
 
 
         int row = 0;
@@ -17,20 +15,20 @@ public class RombPrint_1For {
                 row++;
                 column = -1;
                 continue;
-            }else if (row % 2 == 0 && column % 2 == 0 && column <= a && column >= b)
+            } else if (row % 2 == 0 && column % 2 == 0 && column <= a && column >= b)
                 System.out.print("*");
             else if (row % 2 != 0 && column % 2 != 0 && column <= a + 1 && column >= b - 1)
                 System.out.print("*");
             else System.out.print(" ");
 
 
-            if (column == amountOfColumn && row != amountOfRows +1) {
+            if (column == amountOfColumn && row != amountOfRows + 1) {
                 System.out.println();
 
-                if (row >= userInput + 1 && row % 2 == 0 ) {
+                if (row >= userInput + 1 && row % 2 == 0) {
                     a -= 2;
                     b += 2;
-                } else if (row < userInput - 1 && row % 2 != 0 ) {
+                } else if (row < userInput - 1 && row % 2 != 0) {
                     a += 2;
                     b -= 2;
                 }
